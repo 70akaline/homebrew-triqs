@@ -1,0 +1,22 @@
+language: ruby
+
+matrix:
+  include:
+    - os: osx
+      rvm: system
+
+env:
+  global:
+    - HOMEBREW_DEVELOPER=1
+
+before_install:
+  - brew tap wentzell/triqs
+  - brew update
+
+script:
+  - brew install cthyb
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
