@@ -21,11 +21,11 @@ class Triqs < Formula
   depends_on "pkg-config" => :run
 
   def install
-    system "/usr/local/bin/pip2", "install", "--upgrade", "matplotlib"
-    system "/usr/local/bin/pip2", "install", "--upgrade", "jupyter"
-    system "/usr/local/bin/pip2", "install", "--upgrade", "mako"
-    system "/usr/local/bin/pip2", "install", "--upgrade", "--force-reinstall", "--no-binary=h5py", "h5py"
-    system "/usr/local/bin/pip2", "install", "--upgrade", "--force-reinstall", "--no-binary=mpi4py", "mpi4py"
+    system "pip2", "install", "--upgrade", "--user", "matplotlib"
+    system "pip2", "install", "--upgrade", "--user", "jupyter"
+    system "pip2", "install", "--upgrade", "--user", "mako"
+    system "pip2", "install", "--upgrade", "--user", "--force-reinstall", "--no-binary=h5py", "h5py"
+    system "pip2", "install", "--upgrade", "--user", "--force-reinstall", "--no-binary=mpi4py", "mpi4py"
 
     args = %W[
       ..
