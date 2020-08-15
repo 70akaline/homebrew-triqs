@@ -1,8 +1,8 @@
 class Triqs < Formula
   desc "Toolbox for Research on Interacting Quantum Systems"
-  homepage "https://triqs.github.io/triqs/2.1.x/"
-  url "https://github.com/TRIQS/triqs/archive/2.1.1.tar.gz"
-  sha256 "f76909c02bf306d0796297d9854ad5f1262f2cbd6b8c8521760e972dd72f9d13"
+  homepage "https://triqs.github.io/triqs/2.2.x/"
+  url "https://github.com/TRIQS/triqs/releases/download/2.2.3/triqs-2.2.3.tar.gz"
+  sha256 "8296979a57b4cf21df6eb8cffbae77b0acd0b0c955393a08e89fb255f75a4af7"
   head "https://github.com/TRIQS/triqs"
 
   # doi "10.1016/j.cpc.2015.04.023"
