@@ -15,9 +15,9 @@ class Triqs < Formula
   depends_on "gmp"
   depends_on "fftw"
   depends_on "open-mpi"
-  depends_on "python@2"
-  depends_on "scipy"
-  depends_on "numpy"
+  #depends_on "python@2"
+  #depends_on "scipy"
+  #depends_on "numpy"
   depends_on "pkg-config" => :run
 
   def install
