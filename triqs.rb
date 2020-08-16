@@ -11,7 +11,7 @@ class Triqs < Formula
   depends_on "cmake" => :build
   depends_on "llvm"
   depends_on "boost"
-  depends_on "hdf5"
+  depends_on "hdf5@1.10"
   depends_on "gmp"
   depends_on "fftw"
   depends_on "open-mpi"
@@ -21,11 +21,11 @@ class Triqs < Formula
   depends_on "pkg-config" => :run
 
   def install
-    #system "pip2", "install",  "matplotlib"
-    #system "pip2", "install", "--upgrade", "--user", "jupyter"
-    system "pip2", "install", "mako"
-    system "pip2", "install", "--no-binary=h5py", "h5py"
-    system "pip2", "install", "--no-binary=mpi4py", "mpi4py"
+    #system "python", "-m", "pip", "install",  "matplotlib"
+    #system "python", "-m", "pip", "install", "--upgrade", "--user", "jupyter"
+    #system "python", "-m", "pip", "install", "mako"
+    #system "python", "-m", "pip", "install", "--no-binary=h5py", "h5py"
+    #system "python", "-m", "pip", "install", "--no-binary=mpi4py", "mpi4py"
 
     args = %W[
       ..
